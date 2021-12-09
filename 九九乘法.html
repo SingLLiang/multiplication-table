@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin: 200px auto;
+        /* background-image: linear-gradient(
+          to top,
+          #fcc5e4 0%,
+          #fda34b 15%,
+          #ff7882 35%,
+          #c8699e 52%,
+          #7046aa 71%,
+          #0c1db8 87%,
+          #020f75 100%
+        ); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>第1个pp元素</p>
+      <p>第2个pp元素</p>
+      <p>第3个pp元素</p>
+      <a href="">点我!!</a>
+    </div>
+    <!-- <table>
+      <tbody id="table"></tbody>
+    </table> -->
+    <!-- <script>
+      //九九乘法表
+      let tbody = document.querySelector('table');
+      // let arr = [
+      //   '#fcc5e4 ',
+      //   '#fda34b ',
+      //   '#ff7882 ',
+      //   '#c8699e ',
+      //   '#7046aa ',
+      //   '#0c1db8 ',
+      //   '#020f75 ',
+      // ];
+      for (let i = 1; i <= 9; i++) {
+        let tr = document.createElement('tr');
+        for (let j = 1; j <= i; j++) {
+          let td = document.createElement('td');
+          td.innerHTML = i + '*' + j + '=' + i * j;
+          td.style.border = '1px solid black';
+          td.style.textAlign = 'center';
+          td.style.width = '100px';
+          td.style.borderRadius = '5px';
+          // for (let x = 0; x < j; x++) {
+          //   td.style.backgroundColor = arr[x];
+          // }
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      }
+    </script> -->
+
+    <script>
+      let a = document.querySelector('a');
+      a.href = 'https://www.baidu.com/';
+      a.target = '_blank';
+      console.log(a);
+
+      //自定义属性
+      a.setAttribute('data-yy', 100);
+      a.setAttribute('style', 'background-color:skyblue;');
+      console.log(a);
+    </script>
+  </body>
+</html>
